@@ -1,10 +1,10 @@
 
 :root {
-  --ink:#121417; --muted:#5c6570; --paper:#fff7ed;
-  --accent:#c2410c; --deep:#431407; --line:rgba(18,20,23,.10);
+  --ink:#121417; --muted:#5c6570; --paper:#f6f1ea;
+  --accent:#8a6a4f; --deep:#1c1410; --line:rgba(18,20,23,.10);
   --display:"Space Grotesk",Georgia,"Times New Roman",serif;
   --body:"IBM Plex Sans","Segoe UI",sans-serif; --shell:1120px;
-  --radius:14px;
+  --radius:4px;
 }
 *{box-sizing:border-box} html{scroll-behavior:smooth}
 body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;padding-bottom:72px;-webkit-font-smoothing:antialiased}
@@ -29,7 +29,7 @@ nav a.on,nav a:hover{color:var(--accent)}
 .cta,.btn.solid{background:var(--accent);color:#fff}
 .btn.line{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent}
 .btn.quiet{border:1px solid var(--line);background:#fff;color:var(--ink)}
-.hero{position:relative;min-height:86vh;display:grid;align-items:end;color:#fff;overflow:hidden}
+.hero{position:relative;min-height:88vh;display:grid;align-items:end;color:#fff;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center center;transform:scale(1.02);will-change:transform}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(115deg,rgba(10,12,16,.82),rgba(10,12,16,.28))}
 .hero-copy{position:relative;z-index:2;padding:5rem 0 3.8rem;max-width:720px}
@@ -160,8 +160,9 @@ img{max-width:100%;height:auto}
   .promo{flex-direction:column;align-items:flex-start}
 }
 
-.promo{background:#ffedd5;border-color:#fdba74}
-.block.tint{background:#fffbeb}
+.brand,.hero h1,.page-hero h1,h2{letter-spacing:-.02em}
+.item,.card,.person,blockquote{border-radius:4px}
+.cta,.btn{border-radius:4px;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem}
 
 
 .prose-block .lead.wide{max-width:62ch}
